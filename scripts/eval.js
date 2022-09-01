@@ -19,6 +19,7 @@ const { Octokit } = require('octokit');
     const GPCASE = await checker.GPCASE();
     const gas = await checker.eval(cases, { gasLimit: GPCASE.mul(cases.length) });
     const report = {
+        user: `${issue.data.user.login}`,
         challenge: challenge,
         code: evmcode,
         length: evmcode.length / 2 - 1,
