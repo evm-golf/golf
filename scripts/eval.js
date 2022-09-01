@@ -12,8 +12,9 @@ const { Octokit } = require('octokit');
     try {
         const [, challenge] = issue.data.title.match(/^\[Solution\]\[(\w+)\]$/);
         const [, evmcode] = issue.data.body.match(/^\`\`\`\n(0x[0-9a-f]*)\n\`\`\`$/);
-        console.log(issue.data.created_at)
-        console.log(issue.data.updated_at)
+        if (issue.data.created_at !== issue.data.updated_at) {
+            throw new Error('edit after submit is not allowed');
+        }
         const Deployer = await ethers.getContractFactory("Deployer");
         const solution = await Deployer.deploy(evmcode);
         const Checker = await ethers.getContractFactory("Checker");
