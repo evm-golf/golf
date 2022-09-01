@@ -27,4 +27,10 @@ const { Octokit } = require('octokit');
     };
     const json = JSON.stringify(report);
     writeFileSync(process.env.OUTPUTFILE, json);
+    await octokit.rest.issues.update({
+        owner: `evm-golf`,
+        repo: `solutions`,
+        issue_number: process.env.ISSUE,
+        state: 'closed',
+    })
 })();
