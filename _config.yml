@@ -1,2 +1,8 @@
 theme: minima
 title: EVM Golf
+minima:
+  social_links:
+    github: evm-golf
+header_pages:
+  - challenges/README.md
+  - challenges/addition/README.md
