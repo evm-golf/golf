@@ -1,8 +1,7 @@
 theme: minima
 title: EVM Golf
-minima:
-  social_links:
-    github: evm-golf
+github_username: evm-golf
 header_pages:
   - challenges/README.md
-  - challenges/addition/README.md
+plugins:
+  - jekyll-titles-from-headings

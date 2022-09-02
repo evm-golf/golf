@@ -1,4 +1,4 @@
-# Challenges
+## Challenges
 
 - [addition](addition)
 - [sqrt](sqrt)

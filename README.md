@@ -1,6 +1,6 @@
 EVM Golf is a recreational game designed to show off your code-fu by solving challenges in the **shortest code size** or the **least gas usage**.
 
-# EVM Golf Guide
+## EVM Golf Guide
 
 Follow steps below to participate in EVM Golf.
 
@@ -53,7 +53,7 @@ Follow steps below to participate in EVM Golf.
     > export GITHUB_AUTH_TOKEN=<assess-token>
     > ```
 
-## Set Environment Variables
+### Set Environment Variables
 
 - linux / osx / bsd
 
