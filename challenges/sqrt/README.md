@@ -1,4 +1,4 @@
-# Addition
+# Sqrt
 
 calulate `sqrt(x)`
 
