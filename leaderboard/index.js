@@ -17,5 +17,6 @@
         tr.appendChild(tc);
         tr.appendChild(tg);
         tr.appendChild(tl);
+        table.appendChild(tr);
     }
 })();
