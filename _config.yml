@@ -3,7 +3,7 @@ title: EVM Golf
 github_username: evm-golf
 header_pages:
   - challenges/README.md
-  - leaderboard/index.md
+  - leaderboard/README.md
 plugins:
   - jekyll-titles-from-headings
 titles_from_headings:
