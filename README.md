@@ -2,6 +2,8 @@
 
 This is the EVM Golf environment repo.
 
+EVM Golf is a game designed to show off your code-fu by solving challenges in the least EVM code size or gas usage.
+
 ## Guide
 
 essentially your can follow steps below to participate in this evm golf.
