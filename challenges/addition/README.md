@@ -1,6 +1,6 @@
 # Addition
 
-calulate `a + b`
+calulate `x + y`
 
 ## input
 
