@@ -55,7 +55,7 @@ npm install --save-dev
 
 ### test
 
-you can develop your solution in ether solidity or evmcode directly.
+you can develop your solution in either solidity or evmcode directly.
 
 #### solidity
 
