@@ -1,4 +1,4 @@
 theme: minima
 title: EVM Golf
 header_pages:
-  - challenges/README.md
+  - challenges/index.md
