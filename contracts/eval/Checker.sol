@@ -33,5 +33,6 @@ contract Checker {
             }
         }
         require(min + 1 < MAXGAS, "failed");
+        min++;
     }
 }
