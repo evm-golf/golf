@@ -2,8 +2,6 @@
 
 This is the EVM Golf environment repo.
 
-The challenges are listed in the `challenges` folder.
-
 ## Guide
 
 essentially your can follow steps below to participate in this evm golf.
