@@ -8,7 +8,7 @@
         fetch(`https://evm-golf.github.io/statistics/${search}/gasrank.json`).then(v => v.json()),
     ])
     const table = document.getElementById('data');
-    for (global.i = 0; global.i < lenbest.length || global.i < gasbest.length || global.i < lenrank.length || global.i < gasrank.length; global.i++) {
+    for (window.i = 0; window.i < lenbest.length || window.i < gasbest.length || window.i < lenrank.length || window.i < gasrank.length; window.i++) {
         const tr = document.createElement('tr');
         const tn = document.createElement('td');
         const tlb = document.createElement('td');
@@ -20,11 +20,11 @@
         const tgbc = document.createElement('code');
         const tlrc = document.createElement('code');
         const tgrc = document.createElement('code');
-        tnc.innerText = global.i;
-        tlbc.innerText = `${lenbest[global.i].length} (@${lenbest[global.i].user})`;
-        tgbc.innerText = `${gasbest[global.i].gas} (@${gasbest[global.i].user})`;
-        tlrc.innerText = `${lenrank[global.i].length} (@${lenrank[global.i].user})`;
-        tgrc.innerText = `${gasrank[global.i].gas} (@${gasrank[global.i].user})`;
+        tnc.innerText = window.i;
+        tlbc.innerText = `${lenbest[window.i].length} (@${lenbest[window.i].user})`;
+        tgbc.innerText = `${gasbest[window.i].gas} (@${gasbest[window.i].user})`;
+        tlrc.innerText = `${lenrank[window.i].length} (@${lenrank[window.i].user})`;
+        tgrc.innerText = `${gasrank[window.i].gas} (@${gasrank[window.i].user})`;
         tn.appendChild(tnc);
         tlb.appendChild(tlbc);
         tgb.appendChild(tgbc);
