@@ -21,10 +21,18 @@
         const tlrc = document.createElement('code');
         const tgrc = document.createElement('code');
         tnc.innerText = window.i;
-        tlbc.innerText = `${lenbest[window.i].length} (@${lenbest[window.i].user})`;
-        tgbc.innerText = `${gasbest[window.i].gas} (@${gasbest[window.i].user})`;
-        tlrc.innerText = `${lenrank[window.i].length} (@${lenrank[window.i].user})`;
-        tgrc.innerText = `${gasrank[window.i].gas} (@${gasrank[window.i].user})`;
+        if (window.i < lenbest.length) {
+            tlbc.innerText = `${lenbest[window.i].length} (@${lenbest[window.i].user})`;
+        }
+        if (window.i < gasbest.length) {
+            tgbc.innerText = `${gasbest[window.i].gas} (@${gasbest[window.i].user})`;
+        }
+        if (window.i < lenrank.length) {
+            tlrc.innerText = `${lenrank[window.i].length} (@${lenrank[window.i].user})`;
+        }
+        if (window.i < gasrank.length) {
+            tgrc.innerText = `${gasrank[window.i].gas} (@${gasrank[window.i].user})`;
+        }
         tn.appendChild(tnc);
         tlb.appendChild(tlbc);
         tgb.appendChild(tgbc);
