@@ -53,6 +53,12 @@ Follow steps below to participate in EVM Golf.
     > export GITHUB_AUTH_TOKEN=<assess-token>
     > ```
 
+1. use the command below to check the online evaluation result of your submission where `<submitid>` is the result printed in previous step like `SUBMIT ID: 17`:
+
+    ```sh
+    SUBMIT=<submitid> npx hardhat run scripts/result.js 
+    ```
+
 ### Set Environment Variables
 
 - linux / osx / bsd
