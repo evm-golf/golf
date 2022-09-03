@@ -7,11 +7,14 @@
         const tc = document.createElement('td');
         const tl = document.createElement('td');
         const tg = document.createElement('td');
+        const tca = document.createElement('a');
         const tlc = document.createElement('code');
         const tgc = document.createElement('code');
-        tc.innerText = challenge;
+        tca.innerText = challenge;
+        tca.href = `challenge?${challenge}`;
         tlc.innerText = `${length.length} (@${length.user})`;
         tgc.innerText = `${gas.gas} (@${gas.user})`;
+        tc.appendChild(tca);
         tl.appendChild(tlc);
         tg.appendChild(tgc);
         tr.appendChild(tc);
