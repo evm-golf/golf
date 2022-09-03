@@ -1,4 +1,4 @@
-const { ethers, artifacts } = require('hardhat');
+const { artifacts } = require('hardhat');
 const { execSync } = require('child_process');
 const { Octokit } = require('octokit');
 const { createOAuthDeviceAuth } = require('@octokit/auth-oauth-device');
@@ -40,12 +40,13 @@ const { createOAuthDeviceAuth } = require('@octokit/auth-oauth-device');
     console.error();
   }
 
-  await octokit.rest.issues.create({
+  const issue = await octokit.rest.issues.create({
     owner: `evm-golf`,
     repo: `solutions`,
     title: `[Solution][${process.env.CHALLENGE}]`,
     body: `\`\`\`\n${process.env.EVMCODE}\n\`\`\``,
   });
 
-  console.error(`done!`);
+  console.error(`SUBMIT ID:`);
+  console.log(issue.data.number);
 })();
